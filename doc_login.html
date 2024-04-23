@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctor Dashboard - Login</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Doctor Login</h1>
+    <form id="login-form">
+      <input type="text" placeholder="Username" id="username" name="username" required>
+      <input type="password" placeholder="Password" id="password" name="password" required>
+      <button id="submit-btn" type="submit">Login</button>
+    </form>
+    <!-- <p>Don't have an account? <a href="doc_signup.html">Sign up here.</a></p> -->
+  </div>
+  <script src="script.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', function () {
+    const registerPatientButton = document.getElementById('submit-btn');
+    
+    registerPatientButton.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+        // Redirect to the dashboard page
+        window.location.href = 'doc_dash.html';
+    });
+});
+</script>
+</body>
+</html>

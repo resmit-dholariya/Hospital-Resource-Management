@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Contact Us - Hospital Resource Management</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="image/health2.png" alt="Logo">
+    </div>
+    <h1>Hospital Resource Management</h1>
+
+  </nav>
+  <main>
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>If you are facing any issues or have suggestions, please use the form below to report a problem.</p>
+      <form id="report-form">
+        <fieldset>
+          <legend>Report a Problem</legend>
+          <label for="reporter-type">I am reporting as:</label>
+          <select id="reporter-type">
+            <option value="patient">Patient</option>
+            <option value="hospital">Hospital</option>
+          </select>
+          <label for="reporter-name">Name:</label>
+          <input type="text" id="reporter-name" required>
+          <div id="hospital-name-group" style="display: none;">
+            <label for="hospital-name">Hospital Name:</label>
+            <input type="text" id="hospital-name">
+          </div>
+          <label for="contact-number">Contact Number:</label>
+          <input type="tel" id="contact-number" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          <label for="problem-description">Describe the problem:</label>
+          <textarea id="problem-description" rows="4" required></textarea>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+   
+    <section class="team-section">
+      <h2>Meet the Team</h2>
+      <div class="team-member">
+        <div class="team-member-photo">
+          <img src="team-member1-photo.jpg" alt="Team Member 1">
+        </div>
+        <div class="team-member-info">
+          <h3>Team Member 1</h3>
+          <p>Role: Project Lead</p>
+          <p>Email: team.member1@example.com</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="team-member-photo">
+          <img src="team-member2-photo.jpg" alt="Team Member 2">
+        </div>
+        <div class="team-member-info">
+          <h3>Team Member 2</h3>
+          <p>Role: Developer</p>
+          <p>Email: team.member2@example.com</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="team-member-photo">
+          <img src="team-member3-photo.jpg" alt="Team Member 3">
+        </div>
+        <div class="team-member-info">
+          <h3>Team Member 3</h3>
+          <p>Role: Designer</p>
+          <p>Email: team.member3@example.com</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="team-member-photo">
+          <img src="team-member4-photo.jpg" alt="Team Member 4">
+        </div>
+        <div class="team-member-info">
+          <h3>Team Member 4</h3>
+          <p>Role: QA Analyst</p>
+          <p>Email: team.member4@example.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="footer">
+    <div class="contact-heading">Reach Us</div>
+    <div class="contact-info">
+        <div class="contact-icon">
+            <i class="fa fa-map-marker"></i>
+        </div>
+        <div class="contact-text">
+            office Address: 123 Main Street, City, Country
+        </div>
+    </div>
+    <div class="contact-info">
+        <div class="contact-icon">
+            <i class="fa fa-phone"></i>
+        </div>
+        <div class="contact-text">
+            Phone: <a class="contact-link" href="tel:+1234567890">+123-456-7890</a>
+        </div>
+    </div>
+    <div class="contact-info">
+        <div class="contact-icon">
+            <i class="fa fa-envelope"></i>
+        </div>
+        <div class="contact-text">
+            Email: <a class="contact-link" href="mailto:info@hospital.com">info@hospital.com</a>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

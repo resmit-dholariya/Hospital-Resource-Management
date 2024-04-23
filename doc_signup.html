@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctor Dashboard - Signup</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <div class="signup-container">
+    <h1>Doctor Signup</h1>
+    <form id="signup-form">
+      <input type="text" placeholder="Full Name" id="fullName" name="fullName" required>
+      <input type="text" placeholder="Contact Number" id="contactNumber" name="contactNumber" required>
+      <input type="email" placeholder="Email ID" id="email" name="email" required>
+      <input type="text" placeholder="Specialization" id="specialization" name="specialization" required>
+      <input type="number" placeholder="Years of Experience" id="experience" name="experience" required>
+      <input type="text" placeholder="Hospital Name" id="hospital" name="hospital" required>
+      <button id="submit-btn" type="submit">Sign up</button>
+    </form>
+    <!-- <p>Already have an account? <a href="doc_login.html">Login here.</a></p> -->
+  </div>
+  <!-- <script src="script.js"></script> -->
+  <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const registerPatientButton = document.getElementById('submit-btn');
+            
+            registerPatientButton.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+                // Redirect to the dashboard page
+                window.location.href = 'admin_dash.html';
+            });
+        });
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctor Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="doctor-details">
+      <h1>Welcome, Dr. John Doe</h1>
+      <p>Specialization: Cardiology</p>
+      <p>Years of Experience: 10</p>
+      <p>Hospital: HeartCare Hospital</p>
+    </div>
+    <div class="patient-list">
+      <h2>Patient List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Contact Number</th>
+            <th>Symptoms</th>
+            <th>Severity</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Patient 1</td>
+            <td>35</td>
+            <td>1234567890</td>
+            <td>Fever</td>
+            <td>Mild</td>
+            <td><button class="mark-cured-btn">Mark as Cured</button></td>
+          </tr>
+          <tr>
+            <td>Patient 2</td>
+            <td>28</td>
+            <td>9876543210</td>
+            <td>Cough</td>
+            <td>Moderate</td>
+            <td><button class="mark-cured-btn">Mark as Cured</button></td>
+          </tr>
+          <!-- Add more patient rows here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="dash_script.js"></script>
+</body>
+</html>

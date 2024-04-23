@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/patient.css">
+    <title>Patient Care System</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Patient Information</h1>
+        <form id="patient-form" action="php/submit_patient.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <label for="male"><input type="radio" id="male" name="gender" value="male" required> Male</label>
+                <label for="female"><input type="radio" id="female" name="gender" value="female" required>
+                    Female</label>
+                <label for="other"><input type="radio" id="other" name="gender" value="other" required> Other</label>
+            </fieldset>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <h2>Health Information</h2>
+
+            <label for="location">Oxygen level(%):</label>
+            <input type="tel" id="level" name="O-level" required>
+
+            <label for="location">Blood pressure(mmhg):</label>
+            <input type="text" id="level" name="BloodPressure" required>
+
+            <label for="location">Injury severity(1-10):</label>
+            <input type="text" id="level" name="injury" required>
+
+            <label for="location">Body Temperature:</label>
+            <input type="text" id="location" name="bodytemp" required>
+
+            <label for="location">Heart Rate(bpm):</label>
+            <input type="text" id="location" name="heartrate" required>
+
+
+            <button id="submit_btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const registerPatientButton = document.getElementById('submit_btn');
+            
+            registerPatientButton.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+                // Redirect to the dashboard page
+                window.location.href = 'hosp_dashboard.html';
+            });
+        });
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!-- signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Enrollment - Sign Up</title>
+    <link rel="stylesheet" href="css/hospital.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="step2">
+            <h1>Hospital Enrollment</h1>
+            <h2>Sign Up</h2>
+            <form id="hospital-info-form" action="php/signup.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="hospitalName">Hospital Name:</label>
+                <input type="text" id="hospitalName" name="hospitalName" required>
+
+                <label for="establishedYear">Established Year:</label>
+                <input type="number" id="establishedYear" name="establishedYear" required>
+
+                <label for="beds">Number of Beds:</label>
+                <input type="number" id="beds" name="beds" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" required>
+
+                <h3>Facilities Available</h3>
+                <label><input type="checkbox" name="facilities[]" value="emergency">Emergency Services</label>
+                <label><input type="checkbox" name="facilities[]" value="surgery">Surgery Department</label>
+                <label><input type="checkbox" name="facilities[]" value="radiology">Radiology Services</label>
+                
+                <h3>Available Basic Chemist Drugs</h3>
+                <label><input type="checkbox" name="drugs[]" value="paracetamol">Paracetamol</label>
+                <label><input type="checkbox" name="drugs[]" value="aspirin">Aspirin</label>
+                <label><input type="checkbox" name="drugs[]" value="ibuprofen">Ibuprofen</label>
+                
+                <button id="submit-btn" type="submit">Sign Up</button>
+            </form>
+            <!-- <p>Already have an account? <a href="hospital.html">Log In</a></p> -->
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const registerPatientButton = document.getElementById('submit-btn');
+            
+            registerPatientButton.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+                // Redirect to the dashboard page
+                window.location.href = 'admin_dash.html';
+            });
+        });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+/* Basic styling for the page layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    font-size: 20px;
+    height: 100vh;
+  }
+  
+  header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .about_img img{
+    width: 500px;
+  }
+  
+  .about-section {
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  /* Add more styling as needed */
+  
+  footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+  }
